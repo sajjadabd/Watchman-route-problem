@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Watchman</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="checkBox.css" />
+</head>
+
+
+<body>
+
+<div class="world">
+
+	<div class="paint">
+		<canvas id="myCanvas" width="800" height="500"></canvas>
+	</div>
+	
+	<div class="col">
+	
+		<div class="wrapper">
+			<div class="title">Basic Tools </div>
+			<button class="button" id="clear">Clear Canvas ( x )</button>
+			<!-- <button id="consoleClear">Clear Console ( c )</button> -->
+			<button class="button" id="save">Save Canvas ( s ) </button>
+			<!--<button id="printNodes">Print Nodes ( f )</button>-->
+			<div class="checkboxDiv">
+				<label for="showDetails" class="container">showDetails
+					<input type="checkbox" value="Show Details"  id="showDetails" checked="checked" />
+					<span class="checkmark checkmark"></span>
+				</label>
+			</div>
+		</div>
+	
+	
+		<div class="wrapper">
+			<div class="title">Requirements </div>
+			<button class="button" id="closePath">Close Path ( Enter ) </button>
+			<button class="button" id="angles">Check Angles ( k )</button>
+		</div>
+	
+	</div>
+
+
+</div>
+
+
+<div class="belowWorld">
+	<div class="wrapper">
+		<div class="title">At Once </div>
+		<button class="button" id="kernel">Kernel ( o )</button>
+		<button class="button" id="interCollisions">InerCollisions ( i )</button>
+		<button class="button" id="coloring">Kernel Coloring ( u )</button>
+	</div>
+
+	<div class="wrapper">
+		<div class="title">Step By Step </div>
+		<button class="button long" id="step">LineCollisionsStepByStep ( d )</button>
+		<button class="button long" id="istep">InerCollisionsStepByStep ( e )</button>
+	</div>
+</div>
+
+
+
+
+
+
+<script src="code.js"></script>
+
+</body>
+
+</html> 
